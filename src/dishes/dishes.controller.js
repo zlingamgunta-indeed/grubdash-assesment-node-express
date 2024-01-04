@@ -50,7 +50,7 @@ function update(req, res) {
     } else {
         id = dish.id
     }
-    res.json({ data: { ...body, id } });
+    res.json({ data: { id, ...body } });
 }
 
 module.exports = {
