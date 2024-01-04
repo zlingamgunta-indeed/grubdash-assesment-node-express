@@ -56,7 +56,7 @@ function update(req, res) {
     } else {
         id = order.id
     }
-    res.json({ data: { id, ...body } });
+    res.json({ data: { ...body, id } });
 }
 
 function create(req, res, next) {
